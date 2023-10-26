@@ -1,86 +1,23 @@
-body{
-
-
+#hero {
 }
-.navbar{
-	font-family: 'Montserrat', sans-serif;
-
-}
-.dropdown-item{
-	font-family: 'Ubuntu', sans-serif;
-}
-.top{
-	text-align: center;
-	background-color: /*#f78259;*/   /*#eb4559;*/  #084177; /*#16a596;*/
-	color: white;
+.gradient-background {
+  background: linear-gradient(300deg, #232d3f, #0f0f0f, #008170);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
 }
 
-.top-head{
-    font-family: 'Niconne', cursive;
-}
-.head-text{
-    font-size: 50px;
-    padding: 2% 0%;
-    margin-bottom: 30px;
-
-}
-#myimage{
-	border-radius: 100%;
-}
-#intro{
-    padding: 0px 80px 70px;
-    font-family: 'Merriweather', serif;
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-#myintro{
-    font-family: 'Gotu', sans-serif;
-}
-.middle{
-	margin: 3% 0%;
-}
-
-td{
-	padding: 5px 10px;
-}
-
-.row{
-	font-family: 'Ubuntu', sans-serif;
-}
-.butn {
-	background: #11cdd4;
-	background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-	background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-	background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-	background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-	background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-	-webkit-border-radius: 15;
-	-moz-border-radius: 15;
-	border-radius: 15px;
-	font-family: 'Montserrat', sans-serif;
-	color: #f2f4fa;
-	font-size: 22px;
-	padding: 10px 20px 10px 20px;
-	text-decoration: none;
-
-}
-h3{
-    text-align: center;
-    margin: 50px;
-}
-.butn:hover {
-	background: #30e3cb;
-	background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-	background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-	background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-	background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-	background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-	text-decoration: none;
-}
-.bottomfooter{
-	background-color: /*#015668*/ #ffbcbc;
-	padding: 50px 0px 30px;
-	color: #363636;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 0.75rem;
-	text-align: center;
+.footertext {
+  color: white;
 }
