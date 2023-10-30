@@ -1,4 +1,6 @@
-#hero {
+a {
+  text-decoration: none;
+  color: #0f0f0f;
 }
 .gradient-background {
   background: linear-gradient(300deg, #232d3f, #0f0f0f, #008170);
@@ -17,7 +19,10 @@
     background-position: 0% 50%;
   }
 }
-
+.projects {
+  background-color: #3f1d38;
+  border-radius: 6%;
+}
 .footertext {
   color: white;
 }
