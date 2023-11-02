@@ -1,11 +1,49 @@
+@font-face {
+  font-family: Gagalin-Regular;
+  src: url("./Gagalin-Regular.otf") format("opentype");
+}
+
+h1 {
+  font-family: Gagalin-Regular;
+  font-size: 4rem;
+}
+
 a {
   text-decoration: none;
   color: #0f0f0f;
 }
+.intro {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  color: #b2c8ba;
+  /* font-family: "Libre Baskerville", serif; */
+}
 .gradient-background {
-  background: linear-gradient(300deg, #232d3f, #0f0f0f, #008170);
+  /* background: linear-gradient(300deg, #232d3f, #0f0f0f, #008170);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  animation: gradient-animation 18s ease infinite; */
+
+  background-image: url("./frontBackground.png");
+
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    150deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: 150% 150%;
+  animation: gradient-animation 15s ease infinite; */
+}
+
+.sunset {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    150deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
 @keyframes gradient-animation {
@@ -19,10 +57,14 @@ a {
     background-position: 0% 50%;
   }
 }
-.projects {
-  background-color: #3f1d38;
-  border-radius: 6%;
+.edu {
+  background-color: white;
+  padding: 15px;
 }
 .footertext {
   color: white;
+}
+.footer {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
