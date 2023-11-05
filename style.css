@@ -95,10 +95,14 @@ a {
   }
   .gradient-background {
     background-image: url(./tabletHero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 380px) {
   .gradient-background {
     background-image: url(./phoneHero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
