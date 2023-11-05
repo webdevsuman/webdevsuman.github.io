@@ -97,7 +97,7 @@ a {
     background-image: url(./tabletHero.png);
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .gradient-background {
     background-image: url(./phoneHero.png);
   }
