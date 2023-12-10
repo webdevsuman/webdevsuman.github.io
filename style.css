@@ -1,8 +1,12 @@
+body {
+  background-color: #004d40;
+}
+
 #projects {
-  background-color: #192655;
+  background-color: #004d40;
 }
 .projects {
-  background-color: #f7efe5;
+  background-color: #e0f2f1;
 }
 @font-face {
   font-family: Gagalin-Regular;
@@ -21,15 +25,13 @@ a {
 .intro {
   font-family: "Caveat", cursive;
   font-size: 1.5rem;
-  color: #0f0f0f;
+  color: #cfe7df;
   /* font-family: "Libre Baskerville", serif; */
 }
 .gradient-background {
-  /* background: linear-gradient(300deg, #232d3f, #0f0f0f, #008170);
+  background: linear-gradient(300deg, #232d3f, #0f0f0f, #008170);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite; */
-
-  background-image: url("./frontBackground.png");
+  animation: gradient-animation 18s ease infinite;
 
   /* background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -40,16 +42,6 @@ a {
   );
   background-size: 150% 150%;
   animation: gradient-animation 15s ease infinite; */
-}
-
-.sunset {
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    150deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
 }
 
 @keyframes gradient-animation {
@@ -63,9 +55,9 @@ a {
     background-position: 0% 50%;
   }
 }
-.edu {
-  background-color: #f7efe5;
-  padding: 15px;
+.marketing {
+  background-color: #e0f2f1;
+  color: #3b4444;
 }
 .footertext {
   color: white;
@@ -73,6 +65,8 @@ a {
 .footer {
   margin-top: 1.5rem;
   margin-bottom: 0;
+
+  background-color: #023047;
 }
 .card img {
   float: left;
@@ -93,16 +87,91 @@ a {
   h2 {
     font-size: 2.5rem;
   }
-  .gradient-background {
-    background-image: url(./tabletHero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
-@media (max-width: 380px) {
-  .gradient-background {
-    background-image: url(./phoneHero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+/* ------------------ */
+
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2,
+.content-section-heading .h2 {
+  font-size: 3rem;
+}
+.content-section-heading h3,
+.content-section-heading .h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+.portfolio-item .caption .caption-content h2,
+.portfolio-item .caption .caption-content .h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s,
+      -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
   }
 }
