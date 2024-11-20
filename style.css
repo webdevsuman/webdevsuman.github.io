@@ -26,3 +26,6 @@
 }
 
 /* Hero section */
+#hero > div {
+  justify-content: center;
+}
