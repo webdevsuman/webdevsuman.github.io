@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar section */
+
+.navbar {
+  border-top: solid 3px hsl(194, 85%, 57%);
+}
+
+.nav-item {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(69, 69, 69);
+  margin: 0px 3px;
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.nav-item:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+/* Hero section */
